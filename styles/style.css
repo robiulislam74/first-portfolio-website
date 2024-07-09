@@ -1,0 +1,378 @@
+.open-sans-BodyFontControl {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li, ul, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Common CSS Properties Start */
+    .btn{
+        font-size: 20px;
+        font-weight: 700;
+        color: #FFFFFF;
+        background-color: #FD6E0A;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: rgb(255, 248, 243);
+        border: 1px solid#FD6E0A;
+        color: #FD6E0A;
+        transition: 0.4s;
+    }
+
+    .primary-bg{
+        background-color: rgb(255, 248, 243);
+    }
+    .primary-text{
+        color: rgb(71, 71, 71);;
+    }
+
+    /* .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    } */
+
+/* Common CSS Properties End */
+
+/* navbar part start */
+.header-bg{
+    background-image: url(../images/header_bg.png), url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: right bottom, left;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 180px;
+}
+
+.navbar .nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo{
+    font-family: Open Sans;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.navbar .unique-r{
+    color: #FD6E0A;
+}
+.navbar .nav-items{
+    gap: 50px;
+}
+
+.navbar .nav-items .item{
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* banner part start */
+
+.banner-container{
+    width: 1200px;
+    height: 676px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.banner-container .banner-left-content{
+    width: 50%;
+    /* height: 100%;
+    background-color: aqua; */
+}
+.banner-container .banner-right-content{
+    width: 50%;
+    /* height: 100%;
+    background-color: blueviolet; */
+}
+.banner-container .banner-left-content .box{
+    width: 585px;
+    height: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 17%;
+    margin-top: 10%;
+}
+.banner-container .banner-sub-title{
+    font-size: 40px;
+    font-weight: 600;
+}
+.banner-container .banner-title{
+    font-size: 65px;
+    font-weight: 700;
+    color: rgb(24, 24, 24);
+    margin-bottom: 20px;
+}
+.banner-container .banner-description{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.banner-container .btn{
+    margin-right: 30px;
+}
+.banner-container .banner-right-content img{
+    width: 584px;
+    height: 676px;
+    margin-left: 10px;
+}
+
+/* about part start  */
+.about-part-container{
+    width: 1140px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-part-container .about-box{
+    border: 1px solid rgb(0, 0, 0);
+    width: 827px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about-part-container .about-box .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-part-container .about-box .about-title, .skills-title{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(24, 24, 24);
+    margin: 10px 0px 30px 0px;
+}
+.about-part-container .about-box .about-description, .skills-description{
+    color: rgb(117, 117, 117);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+}
+.about-part-container .about-footer-box{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+}
+.about-part-container .about-box .about-footer-items h6{
+    color: rgb(117, 117, 117);
+    font-size: 18px;
+    font-weight: 700;
+}
+.about-part-container .about-box .about-footer-items h5{
+    color: rgb(71, 71, 71);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Skills Part start */
+.skills-part-container{
+    width: 1140px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+.skills-part-container .skills-box .content{
+    width: 909px;
+    height: 90px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skills-part-container .skill-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-part-container .skill-items .items{
+    width: 267px;
+    height: 377px;
+    margin-top: 100px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+.skills-part-container .items .skill-icon{
+    width: 44px;
+    height: 44px;
+    margin-bottom: 30px;
+}
+
+.skills-part-container .items .skill-title{
+    color: rgb(24, 24, 24);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.skills-part-container .items .skill-description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* Resume part start */
+
+.resume-part-container{
+    width: 1140px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+.resume-part-container .resume-header{
+    text-align: center;
+    margin-bottom: 100px;
+    color: rgb(24, 24, 24);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.resume-part-container .resume-item-box{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.resume-part-container .resume-item-box .resume-content{
+    width: 511px;
+    height: 175px;
+    margin-top: 30px;
+}
+
+.resume-part-container .resume-item-box h3{
+    color: rgb(71, 71, 71);
+    font-size: 30px;
+    font-weight: 700;
+    /* margin-bottom: 30px; */
+}
+.resume-part-container .resume-item-box h4{
+    color: rgb(71, 71, 71);
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.resume-part-container .resume-item-box h5{
+    color: rgb(117, 117, 117);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.resume-part-container .resume-item-box p{
+    color: rgb(117, 117, 117);
+    font-size: 16px;
+    font-weight: 400;
+}
+.resume-part-container .cv-btn-position{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Footer part Start */
+.footer-container{
+    width: 100%;
+    height: auto;
+}
+.footer-container .footer-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px 200px 100px;
+}
+
+.footer-container .footer-left{
+    width: 562px;
+    height: 400px;
+}
+.footer-container .footer-right{
+    width: 480px;
+    height: 400px;
+}
+
+.footer-container .footer-title{
+    color: rgb(24, 24, 24);
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-left .footer-description{
+    color: rgb(71, 71, 71);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.footer-container .footer-left .footer-icons{
+    display: flex;
+    gap: 45px;
+    margin-top: 30px;
+}
+.footer-container .footer-left .footer-icons i{
+    font-size: 24px;
+    color: #FD6E0A;
+    border: 1px dotted rgb(71, 71, 71);
+    padding: 5px;
+}
+
+.footer-right .footer-form input{
+    padding: 18px 0px 18px 30px;
+    width: 461px;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 24px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.08);
+}
+.footer-right .footer-form input::placeholder{
+    color: rgb(117, 117, 117);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-right .footer-form textarea{
+    color: rgb(117, 117, 117);
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    padding: 18px 0px 0px 30px;
+    margin-bottom: 24px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.08);
+}
